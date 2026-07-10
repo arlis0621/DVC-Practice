@@ -11,9 +11,11 @@ data={
     }
 
 new_row={'Name':'Charlie', 'Age':30, 'City':'San Francisco'}
-
+new_row_1={'Name':'David', 'Age':27, 'City':'Seattle'}
 df=pd.DataFrame(data)
 df.loc[len(df)] = new_row
+df.loc[len(df)] = new_row_1
+
 
 data_dir="data"
 os.makedirs(data_dir, exist_ok=True)
